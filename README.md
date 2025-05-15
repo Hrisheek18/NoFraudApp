@@ -12,7 +12,6 @@ Navigate into the project directory:
 
 cd your-repo-name
 (Optional) Create and activate a virtual environment:
-
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install required packages:
@@ -27,13 +26,9 @@ Run all cells sequentially to reproduce the results.
 
 Dependencies
 Python 3.x
-
 pandas
-
 numpy
-
 matplotlib
-
 scikit-learn
 
 (add any other libraries your notebook uses)
@@ -55,14 +50,11 @@ Overview
 The API accepts JSON input with transaction features such as category, amount, gender, state, location coordinates, and other relevant details. It preprocesses these inputs using label encoders and scalers, then uses a pre-trained model to classify the transaction as fraudulent or legitimate.
 
 Features
+
 REST API endpoint /predict that accepts POST requests with transaction data.
-
 Input validation to ensure all required features are present.
-
 Preprocessing of categorical and numerical features.
-
 Returns fraud prediction and probability as JSON.
-
 Built using Flask and standard Python ML libraries.
 
 Getting Started
@@ -74,24 +66,18 @@ pip
 Installation
 Clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 (Optional) Create and activate a virtual environment:
 
-bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 Install required Python packages:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Make sure the following files are present in the project folder:
 
@@ -106,9 +92,7 @@ state_le.pkl — label encoder for state feature
 Running the API
 Run the Flask app:
 
-bash
-Copy
-Edit
+
 python <filename>.py
 Replace <filename>.py with your backend script name (e.g., app.py).
 
@@ -118,8 +102,7 @@ Example Request
 POST to /predict with JSON body containing all features:
 
 json
-Copy
-Edit
+
 {
   "category": "some_category",
   "amt": 123.45,
@@ -136,19 +119,16 @@ Edit
 Response example:
 
 json
-Copy
-Edit
+
 {
   "is_fraud": 0,
   "fraud_probability": 0.0234
 }
+
 Dependencies
 Flask
-
 numpy
-
 scikit-learn
-
 pickle
 
 Project Structure
@@ -166,9 +146,7 @@ This project is licensed under the MIT License.
 
 
 # no_fraud
-
 A new Flutter project.
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
